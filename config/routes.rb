@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   # get 'menu/index'
   # No longer need to put localhost:3000/menu/index, just localhost:3000/menu
   get '/menu' => 'menu#index'
