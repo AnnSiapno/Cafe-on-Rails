@@ -2,7 +2,7 @@ require 'test_helper'
 
 class MenuControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get menu_index_url
+    get menu_url
     assert_response :success
     # Assert that the h1 on the mage has the text of 'Menu'
     assert_select 'h1', 'Menu'
